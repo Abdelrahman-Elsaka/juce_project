@@ -166,7 +166,7 @@ void PlayerAudio::play()
     }
 }
 bool PlayerAudio::is_transportSource_playing() {
-    return(!transportSource.isPlaying());
+    return(transportSource.getCurrentPosition() >= total_time ? true : false);
 }
 void PlayerAudio::loop_on() {
     /*readerSource->setLooping(true);*/
