@@ -157,7 +157,7 @@ void PlayerGUI::buttonClicked(juce::Button* button)
         else {
             range_loop_button.setButtonText("range_Loop:off");
             loop_slider.setVisible(false);
-            audioPlayer.set_loop_by_buttons(loop_start_point, loop_end_point);
+          /*  audioPlayer.set_loop_by_buttons(loop_start_point, loop_end_point);*/
         }
     }
     else if (button == &muteButton) {

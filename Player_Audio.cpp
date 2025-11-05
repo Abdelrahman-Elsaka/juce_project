@@ -98,11 +98,12 @@ void PlayerAudio::loadFile(const juce::File& file)
 
 
         // محاولة فتح الملف
+        // محاولة فتح الملف وإنشاء قارئ
         reader = formatManager.createReaderFor(file);
         total_time = (reader->lengthInSamples / reader->sampleRate);
 
-        // محاولة فتح الملف وإنشاء قارئ
-        auto* reader = formatManager.createReaderFor(file);
+       
+      
 
 
         if (reader != nullptr)
